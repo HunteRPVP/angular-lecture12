@@ -1,0 +1,13 @@
+<div class="content" role="main">
+  <span>{{ title }} app is running!</span>
+</div>
+
+<span data-test-id="param.name">{{ param.name }} is a cool guy!!!</span>
+
+
+<form #myForm = "ngForm">
+  <p class="square">{{ appService.square() }}</p>
+  <input type="number" name="a" [(ngModel)]="appService.a">
+
+  {{ myForm.value | json }}
+</form>
